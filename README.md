@@ -8,22 +8,11 @@
 <br />
 
 <div align="center">
-  <!-- Dependencies Status -->
-  <a href="https://david-dm.org/haxorbit/chiron" title="Dependencies Status">
-    <img src="https://david-dm.org/haxorbit/chiron/status.svg" alt="Dependencies Status" />
-  </a>
-  <!-- devDependencies Status -->
-  <a href="https://david-dm.org/haxorbit/chiron?type=dev" title="devDependencies Status">
-    <img src="https://david-dm.org/haxorbit/chiron/dev-status.svg" alt="devDependencies Status" />
-  </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/haxorbit/chiron" title="Build Status">
-    <img src="https://travis-ci.org/haxorbit/chiron.svg" alt="Build Status" />
-  </a>
-  <!-- Test Coverage Status -->
-  <a href="https://coveralls.io/github/haxorbit/chiron" title="Test Coverage Status">
-    <img src="https://coveralls.io/repos/github/haxorbit/chiron/badge.svg" alt="Test Coverage Status" />
-  </a>
+[![Travis CI Build Status][travis-image]][travis-url]
+[![AppVeyor Build Status][appveyor-image]][appveyor-url]
+[![Code Coverage Status][coveralls-image]][coveralls-url]
+[![Dependencies Status][david-image]][david-url]
+[![Dev Dependencies Status][david-dev-image]][david-dev-url]
 </div>
 
 <br />
@@ -135,3 +124,14 @@ This project would not be possible without the support by these amazing folks. [
 
 This project is licensed under the MIT license, Copyright (c) 2017 Maximilian
 Stoiber. For more information see `LICENSE.md`.
+
+[travis-image]: https://travis-ci.org/haxorbit/chiron.svg
+[travis-url]: https://travis-ci.org/haxorbit/chiron
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/xrs0v3cav98y336h?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/haxorbit/chiron
+[coveralls-image]: https://coveralls.io/repos/github/haxorbit/chiron/badge.svg
+[coveralls-url]: https://coveralls.io/github/haxorbit/chiron
+[david-image]: https://david-dm.org/haxorbit/chiron/status.svg
+[david-url]: https://david-dm.org/haxorbit/chiron
+[david-dev-image]: https://david-dm.org/haxorbit/chiron/dev-status.svg
+[david-dev-url]: https://david-dm.org/haxorbit/chiron?type=dev
