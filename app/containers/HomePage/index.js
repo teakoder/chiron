@@ -11,6 +11,7 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
+import { ipcRenderer } from 'electron';
 
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
@@ -30,6 +31,13 @@ import reducer from './reducer';
 import saga from './saga';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   /**
    * when initial state username is not null, submit the form to load repos
    */
@@ -37,6 +45,18 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     if (this.props.username && this.props.username.trim().length > 0) {
       this.props.onSubmitForm();
     }
+  }
+
+  handleClick() {
+    // ipcRenderer.send('ping', 'hello world');
+
+    const notif = new window.Notification('My First Notification', {
+      body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, maxime explicabo dolores tenetur',
+    });
+
+    notif.onclick = function showWindowEvent() {
+      ipcRenderer.send('show-about-window-event');
+    };
   }
 
   render() {
@@ -66,6 +86,15 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             <H2>
               <FormattedMessage {...messages.trymeHeader} />
             </H2>
+            <span>
+              {`Node.js version: ${process.versions.node} |
+                Chromium version: ${process.versions.chrome} |
+                Electron version: ${process.versions.electron}
+              `}
+            </span>
+            <button onClick={this.handleClick}>
+              Test
+            </button>
             <Form onSubmit={this.props.onSubmitForm}>
               <label htmlFor="username">
                 <FormattedMessage {...messages.trymeMessage} />
