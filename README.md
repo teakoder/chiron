@@ -2,24 +2,17 @@
 
 <br />
 
-<div align="center"><strong>Start your next react project in seconds</strong></div>
-<div align="center">A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</div>
+<strong>Start your next react project in seconds</strong>
 
-<br />
+A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices
 
-<div align="center">
 [![Travis CI Build Status][travis-image]][travis-url]
 [![AppVeyor Build Status][appveyor-image]][appveyor-url]
 [![Code Coverage Status][coveralls-image]][coveralls-url]
 [![Dependencies Status][david-image]][david-url]
 [![Dev Dependencies Status][david-dev-image]][david-dev-url]
-</div>
 
-<br />
-
-<div align="center">
-  <sub>Created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and maintained with ❤️ by an amazing <a href="https://github.com/orgs/react-boilerplate/teams/core">team of developers</a>.</sub>
-</div>
+<sub>Created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and maintained with ❤️ by an amazing <a href="https://github.com/orgs/react-boilerplate/teams/core">team of developers</a>.</sub>
 
 ## Features
 
