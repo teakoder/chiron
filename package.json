@@ -1,11 +1,8 @@
 {
   "name": "chiron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A scalable Electron app with the best DX",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
-  },
+  "repository": "haxorbit/chiron",
   "engines": {
     "npm": ">=3",
     "node": ">=5"
@@ -57,7 +54,8 @@
     "dist:all": "yarn run production && electron-builder -mwl",
     "dist:win": "yarn run production && electron-builder --win --x64",
     "dist:mac": "yarn run production && electron-builder --mac",
-    "dist:linux": "yarn run production && electron-builder --linux"
+    "dist:linux": "yarn run production && electron-builder --linux",
+    "release": "yarn run production && electron-builder"
   },
   "lint-staged": {
     "*.js": "lint:eslint"
