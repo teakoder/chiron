@@ -11,6 +11,7 @@ A highly scalable, offline-first foundation with the best DX and a focus on perf
 [![Code Coverage Status][coveralls-image]][coveralls-url]
 [![Dependencies Status][david-image]][david-url]
 [![Dev Dependencies Status][david-dev-image]][david-dev-url]
+[![bitHound Overall Score][bithound-image]][bithound-url]
 
 <sub>Created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and maintained with ❤️ by an amazing <a href="https://github.com/orgs/react-boilerplate/teams/core">team of developers</a>.</sub>
 
@@ -128,3 +129,5 @@ Stoiber. For more information see `LICENSE.md`.
 [david-url]: https://david-dm.org/haxorbit/chiron
 [david-dev-image]: https://david-dm.org/haxorbit/chiron/dev-status.svg
 [david-dev-url]: https://david-dm.org/haxorbit/chiron?type=dev
+[bithound-image]: https://www.bithound.io/github/haxorbit/chiron/badges/score.svg
+[bithound-url]: https://www.bithound.io/github/haxorbit/chiron
